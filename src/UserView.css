@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.UserView {
+  background-color: #1e2a47;
+  width: 730px;
+  height: 419px;
+  border-radius: 15px;
+}
+
+.UserInfo {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.UserTop {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+}
+
+.UserTop img {
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.Name {
+  color: #fff;
+  width: 200px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 0;
+}
+
+.Login {
+  color: #0079ff;
+  width: 100px;
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+  margin-top: 0;
+}
+
+.Bio {
+  color: #fff;
+  width: 250px;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+}
+
+.Joined {
+  color: #fff;
+  width: 250px;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+}
