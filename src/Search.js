@@ -19,6 +19,7 @@ class Search extends React.Component {
     event.preventDefault();
     console.log(search.value);
     console.log("You Clicked Submit");
+
     fetch(`https://api.github.com/users/${search.value}`)
       .then((res) => res.json())
       .then(
@@ -58,8 +59,16 @@ class Search extends React.Component {
   }
 
   render() {
-    const { erro, isLoaded, data } = this.state;
-    console.log(data);
+    const { error, isLoaded, data } = this.state;
+    let noResult = "";
+    const fdata = [];
+    if (data.message === "Not Found") {
+      noResult = "No Results";
+    } else {
+      noResult = "";
+    }
+
+    console.log(`This was track as data in search component ${data.message}`);
     return (
       <div className="Search">
         <div className="Search-bar">
@@ -71,12 +80,14 @@ class Search extends React.Component {
               name="search"
               placeholder="Search Github username..."
             ></input>
+            <p className="noResult">{noResult}</p>
             <button id="submit" type="submit">
               Search
             </button>
           </form>
         </div>
         <UserView
+          message={data.message}
           avatar={data.avatar_url}
           name={data.name}
           login={data.login}

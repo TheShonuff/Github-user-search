@@ -11,7 +11,17 @@ class UserView extends React.Component {
     super(props);
     this.state = {};
   }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.message === "Not Found") {
+      return false;
+    }
+    return true;
+  }
+
   render() {
+    console.log("Error Tracking in UserView");
+    console.log(this.props.message);
     let stringBio = "";
     if (this.props.bio === null) {
       stringBio = "This profile has no bio";

@@ -5,10 +5,24 @@
   height: 69px;
   width: 730px;
   border-radius: 15px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+
+.noResult {
+  color: red;
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  margin-left: 10rem;
+}
+
+.Search-Form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .Search-bar img {
@@ -18,7 +32,7 @@
 
 #search {
   background-color: #1e2a47;
-  width: 530px;
+  width: 230px;
   font-size: 18px;
   color: #fff;
   border: none;
