@@ -174,3 +174,105 @@
   font-size: 15px;
   margin-left: 1rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .UserView {
+    width: 573px;
+  }
+
+  .repoInfo {
+    width: 493px;
+    margin-left: 3rem;
+  }
+
+  .contactInfo {
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+
+  .Bio {
+    margin-top: 4rem;
+    margin-left: -9rem;
+  }
+
+  .Joined {
+    position: absolute;
+    margin-top: 8.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .UserTop img {
+    height: 70px;
+    width: 70px;
+    margin-top: 2rem;
+  }
+
+  .UserTop p {
+    font-size: 13px;
+  }
+  .UserInfo {
+    margin-top: 1.5rem;
+  }
+  .UserView {
+    width: 327px;
+    height: auto;
+  }
+  .Bio {
+    margin-top: 4rem;
+    margin-left: -6rem;
+  }
+
+  .Joined {
+    position: absolute;
+    margin-top: 7.5rem;
+    margin-left: -3.2rem;
+  }
+
+  .repoInfo {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 42px;
+    width: 279px;
+    height: 85px;
+
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .repoTitles {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    align-items: center;
+    justify-self: center;
+    width: 100px;
+  }
+
+  .repoTitles p {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+
+  .repoCount {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    align-items: center;
+    justify-self: center;
+    width: 50px;
+  }
+
+  .repoCount p {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+
+  .contactInfo {
+    display: block;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}

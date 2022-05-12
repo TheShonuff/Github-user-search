@@ -30,7 +30,7 @@ class UserView extends React.Component {
     }
 
     return (
-      <div className="UserView  .theme-light">
+      <div className="UserView .theme-light">
         <div className="UserTop">
           <img src={this.props.avatar}></img>
           <div className="UserInfo">
@@ -39,7 +39,7 @@ class UserView extends React.Component {
               <p className="Joined">Joined {this.props.created}</p>
             </div>
 
-            <p className="Login">{this.props.login}</p>
+            <p className="Login">@{this.props.login}</p>
             <p className="Bio">{stringBio}</p>
           </div>
         </div>

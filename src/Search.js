@@ -67,32 +67,32 @@ class Search extends React.Component {
     } else {
       noResult = "";
     }
-    function DateFormat() {
-      const months = {
-        1: "Jan",
-        2: "Feb",
-        3: "Mar",
-        4: "Apr",
-        5: "May",
-        6: "Jun",
-        7: "Jul",
-        8: "Aug",
-        9: "Sep",
-        10: "Oct",
-        11: "Nov",
-        12: "Dec",
-      };
-      if (isLoaded) {
-        let DateString = data.created_at;
+    // function DateFormat() {
+    //   const months = {
+    //     1: "Jan",
+    //     2: "Feb",
+    //     3: "Mar",
+    //     4: "Apr",
+    //     5: "May",
+    //     6: "Jun",
+    //     7: "Jul",
+    //     8: "Aug",
+    //     9: "Sep",
+    //     10: "Oct",
+    //     11: "Nov",
+    //     12: "Dec",
+    //   };
+    //   if (isLoaded) {
+    //     let DateString = data.created_at;
 
-        const arr = DateString.split("-");
-        let Day = arr[2].slice(0, 2);
-        let Month = arr[1];
-        return `Joined ${Day} ${Month.months} `;
-      }
-    }
-    console.log(`Date ${DateFormat()}`);
-    console.log(`This was track as data in search component ${data.message}`);
+    //     const arr = DateString.split("-");
+    //     let Day = arr[2].slice(0, 2);
+    //     let Month = arr[1];
+    //     return `Joined ${Day} ${Month.months} `;
+    //   }
+    // }
+    // console.log(`Date ${DateFormat()}`);
+    // console.log(`This was track as data in search component ${data.message}`);
     return (
       <div className="Search">
         <div className="Header">
