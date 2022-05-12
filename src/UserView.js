@@ -28,14 +28,15 @@ class UserView extends React.Component {
     } else {
       stringBio = this.props.bio;
     }
+
     return (
-      <div className="UserView">
+      <div className="UserView  .theme-light">
         <div className="UserTop">
           <img src={this.props.avatar}></img>
           <div className="UserInfo">
             <div className="container">
               <h3 className="Name">{this.props.name}</h3>
-              <p className="Joined">{this.props.created}</p>
+              <p className="Joined">Joined {this.props.created}</p>
             </div>
 
             <p className="Login">{this.props.login}</p>

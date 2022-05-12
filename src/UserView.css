@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+.theme-dark {
+  --background-color: #141d2f;
+  --card-background-color: #1e2a47;
+  --card-accent-background-color: #697c9a;
+  --text-main-text-color: #fff;
+  --SVG-color: #fff;
+}
+
+.theme-light {
+  --background-color: #f6f8ff;
+  --card-background-color: #fefefe;
+  --card-accent-background-color: #697c9a;
+  --text-main-text-color: #4b6a9b;
+  --SVG-color: #4b6a9b;
+}
+
 .nullBio {
   color: #fff;
   mix-blend-mode: normal;
@@ -7,11 +23,12 @@
 }
 
 .UserView {
-  background-color: #1e2a47;
+  background-color: #fefefe;
   width: 730px;
   height: 419px;
   border-radius: 15px;
   margin-top: 1.5rem;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 }
 .container {
   display: flex;
@@ -40,7 +57,7 @@
 }
 
 .Name {
-  color: #fff;
+  color: #4b6a9b;
   width: 200px;
   font-size: 26px;
   font-weight: bold;
@@ -58,14 +75,14 @@
 }
 
 .Bio {
-  color: #fff;
+  color: #4b6a9b;
   width: 250px;
   font-size: 15px;
   font-family: "Space Mono", monospace;
 }
 
 .Joined {
-  color: #fff;
+  color: #4b6a9b;
   width: 250px;
   font-size: 15px;
   font-family: "Space Mono", monospace;
@@ -78,7 +95,7 @@
   grid-template-rows: 42px;
   width: 480px;
   height: 85px;
-  background-color: #141d2f;
+  background-color: #f6f8ff;
   border-radius: 15px;
   margin-left: 11rem;
   margin-right: 3rem;
@@ -94,7 +111,7 @@
 }
 
 .repoTitles p {
-  color: #fff;
+  color: #4b6a9b;
   font-weight: regular;
   font-size: 13px;
   font-family: "Space Mono", monospace;
@@ -112,7 +129,7 @@
 }
 
 .repoCount p {
-  color: #fff;
+  color: #2b3442;
   font-weight: bold;
   font-size: 22px;
   font-family: "Space Mono", monospace;
@@ -144,7 +161,7 @@
 .website img,
 .location img,
 .company img {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(206%)
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(0%)
     contrast(103%);
 }
 
@@ -152,7 +169,7 @@
 .website p,
 .twitter p,
 .company p {
-  color: white;
+  color: #4b6a9b;
   font-family: "Space Mono", monospace;
   font-size: 15px;
   margin-left: 1rem;
