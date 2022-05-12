@@ -201,7 +201,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   .UserTop img {
     height: 70px;
     width: 70px;
