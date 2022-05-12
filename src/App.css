@@ -19,8 +19,11 @@
 } */
 
 html,
-#root {
+#root,
+#root > div {
   background-color: #f6f8ff;
+  margin: 0;
+  height: 100%;
 }
 
 h1 {
@@ -28,4 +31,10 @@ h1 {
   font-size: 26px;
   font-weight: bold;
   color: #000;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

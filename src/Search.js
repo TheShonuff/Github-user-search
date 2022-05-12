@@ -95,6 +95,9 @@ class Search extends React.Component {
     console.log(`This was track as data in search component ${data.message}`);
     return (
       <div className="Search">
+        <div className="Header">
+          <h1>devfinder</h1>
+        </div>
         <div className="Search-bar">
           <img src={search}></img>
           <form className="Search-Form" onSubmit={this.handleSubmit}>
