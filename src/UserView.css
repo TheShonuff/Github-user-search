@@ -175,7 +175,7 @@
   margin-left: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 880px) (...) {
   .UserView {
     width: 573px;
   }
@@ -201,7 +201,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .UserTop img {
     height: 70px;
     width: 70px;
