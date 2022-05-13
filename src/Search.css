@@ -70,7 +70,7 @@
   margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 400px) {
   .Search-bar {
     width: 573px;
   }
