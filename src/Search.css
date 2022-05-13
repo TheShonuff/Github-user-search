@@ -101,14 +101,14 @@
   }
   #search {
     background-color: #fefefe;
-    width: 184px;
+    width: 180px;
     font-size: 13px;
     color: #4b6a9b;
     border: none;
     font-family: "Space Mono", monospace;
     outline: none;
-    margin-right: -2.1rem;
-    margin-left: -1.1rem;
+    margin-right: -4.5rem;
+    margin-left: 0.5rem;
   }
 
   .Search-Form {
