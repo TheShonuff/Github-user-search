@@ -70,7 +70,7 @@
   margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .Search-bar {
     width: 573px;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 500px) {
   .Search-bar {
     width: 327px;
   }
