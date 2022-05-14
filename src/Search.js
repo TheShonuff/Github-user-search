@@ -17,8 +17,8 @@ class Search extends React.Component {
   handleSubmit(event) {
     let search = document.querySelector("#search");
     event.preventDefault();
-    console.log(search.value);
-    console.log("You Clicked Submit");
+    // console.log(search.value);
+    // console.log("You Clicked Submit");
 
     fetch(`https://api.github.com/users/${search.value}`)
       .then((res) => res.json())
@@ -67,31 +67,37 @@ class Search extends React.Component {
     } else {
       noResult = "";
     }
-    // function DateFormat() {
-    //   const months = {
-    //     1: "Jan",
-    //     2: "Feb",
-    //     3: "Mar",
-    //     4: "Apr",
-    //     5: "May",
-    //     6: "Jun",
-    //     7: "Jul",
-    //     8: "Aug",
-    //     9: "Sep",
-    //     10: "Oct",
-    //     11: "Nov",
-    //     12: "Dec",
-    //   };
-    //   if (isLoaded) {
-    //     let DateString = data.created_at;
+    function DateFormat() {
+      const months = [
+        "null",
+        "Jan",
+        "Feb",
+        "March",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      if (isLoaded) {
+        let DateString = data.created_at;
 
-    //     const arr = DateString.split("-");
-    //     let Day = arr[2].slice(0, 2);
-    //     let Month = arr[1];
-    //     return `Joined ${Day} ${Month.months} `;
-    //   }
-    // }
-    // console.log(`Date ${DateFormat()}`);
+        const arr = DateString.split("-");
+        console.log(arr);
+        let Day = arr[2].slice(0, 2);
+        let Month = arr[1];
+        let MonthResult = parseInt(Month, 10);
+        console.log(MonthResult);
+        console.log(`The new Month after slice is ${Month}`);
+        return `${Day} ${months[MonthResult]} ${arr[0]} `;
+      }
+    }
+    console.log(`Date ${DateFormat()}`);
+    const Date = DateFormat();
     // console.log(`This was track as data in search component ${data.message}`);
     return (
       <div className="Search">
@@ -119,7 +125,7 @@ class Search extends React.Component {
           name={data.name}
           login={data.login}
           bio={data.bio}
-          created={data.created_at}
+          created={Date}
           repos={data.public_repos}
           followers={data.followers}
           following={data.following}

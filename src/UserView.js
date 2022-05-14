@@ -20,8 +20,8 @@ class UserView extends React.Component {
   }
 
   render() {
-    console.log("Error Tracking in UserView");
-    console.log(this.props.message);
+    // console.log("Error Tracking in UserView");
+    // console.log(this.props.message);
     let stringBio = "";
     if (this.props.bio === null) {
       stringBio = "This profile has no bio";
