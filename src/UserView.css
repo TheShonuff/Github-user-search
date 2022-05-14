@@ -198,6 +198,7 @@
   .Joined {
     position: absolute;
     margin-top: 8.5rem;
+    margin-left: -5.3rem;
   }
 }
 
@@ -208,6 +209,10 @@
     margin-top: 2rem;
   }
 
+  .Name {
+    margin-top: 0.5rem;
+    font-size: 16px;
+  }
   .UserTop p {
     font-size: 13px;
   }
@@ -225,8 +230,8 @@
 
   .Joined {
     position: absolute;
-    margin-top: 7.5rem;
-    margin-left: -3.2rem;
+    margin-top: 7rem;
+    margin-left: -6.7rem;
   }
 
   .repoInfo {
