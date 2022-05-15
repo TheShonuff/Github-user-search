@@ -61,7 +61,6 @@ class Search extends React.Component {
   render() {
     const { error, isLoaded, data } = this.state;
     let noResult = "";
-    const fdata = [];
     if (data.message === "Not Found") {
       noResult = "No Results";
     } else {
@@ -83,7 +82,7 @@ class Search extends React.Component {
         "Nov",
         "Dec",
       ];
-      if (isLoaded) {
+      if (isLoaded && data.message !== "Not Found") {
         let DateString = data.created_at;
 
         const arr = DateString.split("-");
@@ -91,14 +90,11 @@ class Search extends React.Component {
         let Day = arr[2].slice(0, 2);
         let Month = arr[1];
         let MonthResult = parseInt(Month, 10);
-        console.log(MonthResult);
-        console.log(`The new Month after slice is ${Month}`);
         return `${Day} ${months[MonthResult]} ${arr[0]} `;
       }
     }
-    console.log(`Date ${DateFormat()}`);
     const Date = DateFormat();
-    // console.log(`This was track as data in search component ${data.message}`);
+    // console.log(`This returned a blog of ${data.blog}`);
     return (
       <div className="Search">
         <div className="Header">
@@ -132,7 +128,7 @@ class Search extends React.Component {
           company={data.company}
           twitter={data.twitter_username}
           location={data.location}
-          website={data.blog}
+          blog={data.blog}
         />
       </div>
     );

@@ -28,7 +28,7 @@ class UserView extends React.Component {
     } else {
       stringBio = this.props.bio;
     }
-
+    console.log(`UserView has blog as ${this.props.blog}`);
     return (
       <div className="UserView .theme-light">
         <div className="UserTop">
@@ -56,21 +56,53 @@ class UserView extends React.Component {
           </div>
         </div>
         <div className="contactInfo">
-          <div className="location">
+          <div
+            className={
+              this.props.location === null
+                ? "not-found location location"
+                : "location"
+            }
+          >
             <img src={locationSVG}></img>
             <p>{this.props.location}</p>
           </div>
-          <div className="twitter">
+          <div
+            className={
+              this.props.twitter === null
+                ? "not-found-twitter twitter"
+                : "twitter"
+            }
+          >
             <img src={twitterSVG}></img>
-            <p>{this.props.twitter}</p>
+            <p>
+              {this.props.twitter === null
+                ? "Not Available"
+                : this.props.twitter}
+            </p>
           </div>
-          <div className="website">
+          <div
+            className={
+              this.props.blog === null ? "not-found-webiste wesbite" : "website"
+            }
+          >
             <img src={websiteSVG}></img>
-            <p>{this.props.blog}</p>
+            <p>
+              {this.props.blog === null ? "Noy Available" : this.props.blog}
+            </p>
           </div>
-          <div className="company">
+          <div
+            className={
+              this.props.company === null
+                ? "not-found-company company"
+                : "company"
+            }
+          >
             <img src={companySVG}></img>
-            <p>{this.props.company}</p>
+            <p>
+              {this.props.company === null
+                ? "Not Available"
+                : this.props.company}
+            </p>
           </div>
         </div>
       </div>
