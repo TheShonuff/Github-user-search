@@ -264,7 +264,7 @@
 
     margin-left: 1.5rem;
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .repoTitles {
@@ -300,5 +300,10 @@
     margin-left: 2rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
+  }
+
+  .contactInfo p {
+    font-size: 13px;
+    margin-bottom: 0.2rem;
   }
 }

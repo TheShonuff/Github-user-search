@@ -38,3 +38,10 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 500px) {
+  .Search {
+    margin-top: -14rem;
+  }
+}
