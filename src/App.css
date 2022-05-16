@@ -1,36 +1,17 @@
-.theme-dark {
-  --background-color: #141d2f;
-  --card-background-color: #1e2a47;
-  --card-accent-background-color: #697c9a;
-  --text-main-text-color: #fff;
-  --SVG-color: #fff;
-}
-
-.theme-light {
-  --background-color: #f6f8ff;
-  --card-background-color: #fefefe;
-  --card-accent-background-color: #697c9a;
-  --text-main-text-color: #4b6a9b;
-  --SVG-color: #4b6a9b;
-}
-
-/* body {
-  background-color: #141d2f;
-} */
-
 html,
 #root,
 #root > div {
-  background-color: #f6f8ff;
+  /* background-color: #f6f8ff; */
   margin: 0;
   height: 100%;
+  background-color: var(--background-color);
 }
 
 h1 {
   font-family: "Space Mono", monospace;
   font-size: 26px;
   font-weight: bold;
-  color: #000;
+  color: var(--h1);
 }
 
 .App {
@@ -38,6 +19,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 500px) {

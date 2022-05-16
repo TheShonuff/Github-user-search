@@ -3,6 +3,10 @@ import UserView from "./UserView";
 import "./Search.css";
 import search from "./assets/icon-search.svg";
 
+//experimental components
+import { useTheme } from "./ThemeContext";
+import { useState } from "react";
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -94,7 +98,7 @@ class Search extends React.Component {
       }
     }
     const Date = DateFormat();
-    // console.log(`This returned a blog of ${data.blog}`);
+
     return (
       <div className="Search">
         <div className="Header">

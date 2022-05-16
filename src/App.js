@@ -4,12 +4,24 @@ import "./App.css";
 import Search from "./Search";
 import UserView from "./UserView";
 import { useEffect } from "react";
+
+//
+import useLocalStorage from "use-local-storage";
+
 function App() {
-  useEffect(() => {
-    keepTheme();
-  });
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
+      <button onClick={switchTheme}>I'm a Theme Changer</button>
       <Search />
     </div>
   );

@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.theme-dark {
-  --background-color: #141d2f;
-  --card-background-color: #1e2a47;
-  --card-accent-background-color: #697c9a;
-  --text-main-text-color: #fff;
-  --SVG-color: #fff;
-}
-
-.theme-light {
-  --background-color: #f6f8ff;
-  --card-background-color: #fefefe;
-  --card-accent-background-color: #697c9a;
-  --text-main-text-color: #4b6a9b;
-  --SVG-color: #4b6a9b;
-}
-
 .nullBio {
   color: #fff;
   mix-blend-mode: normal;
@@ -23,13 +7,16 @@
 }
 
 .UserView {
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
+  background-color: var(--card-background-color);
   width: 730px;
   min-height: 419px;
   border-radius: 15px;
   margin-top: 1.5rem;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  box-shadow: var(--box-shadow);
+  /* box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567); */
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -57,7 +44,7 @@
 }
 
 .Name {
-  color: #4b6a9b;
+  color: var(--text-main-text-color);
   width: 200px;
   font-size: 26px;
   font-weight: bold;
@@ -75,14 +62,14 @@
 }
 
 .Bio {
-  color: #4b6a9b;
+  color: var(--text-main-text-color);
   width: 250px;
   font-size: 15px;
   font-family: "Space Mono", monospace;
 }
 
 .Joined {
-  color: #4b6a9b;
+  color: var(--text-main-text-color);
   width: 250px;
   font-size: 15px;
   font-family: "Space Mono", monospace;
@@ -95,7 +82,7 @@
   grid-template-rows: 42px;
   width: 480px;
   height: 85px;
-  background-color: #f6f8ff;
+  background-color: var(--background-color);
   border-radius: 15px;
   margin-left: 11rem;
   margin-right: 3rem;
@@ -111,7 +98,7 @@
 }
 
 .repoTitles p {
-  color: #4b6a9b;
+  color: var(--text-main-text-color);
   font-weight: regular;
   font-size: 13px;
   font-family: "Space Mono", monospace;
@@ -129,7 +116,8 @@
 }
 
 .repoCount p {
-  color: #2b3442;
+  /* color: #2b3442; */
+  color: var(--follower-count-text);
   font-weight: bold;
   font-size: 22px;
   font-family: "Space Mono", monospace;
@@ -190,7 +178,7 @@
 .website p,
 .twitter p,
 .company p {
-  color: #4b6a9b;
+  color: var(--text-main-text-color);
   font-family: "Space Mono", monospace;
   font-size: 15px;
   margin-left: 1rem;

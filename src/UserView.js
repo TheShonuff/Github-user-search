@@ -1,6 +1,7 @@
 import React, { Component, useDebugValue } from "react";
 import Search from "./Search";
 import "./UserView.css";
+import "./index.css";
 import locationSVG from "./assets/icon-location.svg";
 import twitterSVG from "./assets/icon-twitter.svg";
 import websiteSVG from "./assets/icon-website.svg";
@@ -30,7 +31,7 @@ class UserView extends React.Component {
     }
     console.log(`UserView has blog as ${this.props.blog}`);
     return (
-      <div className="UserView .theme-light">
+      <div className="UserView">
         <div className="UserTop">
           <img src={this.props.avatar}></img>
           <div className="UserInfo">
