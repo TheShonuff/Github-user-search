@@ -17,6 +17,10 @@
   --follower-count-text: #fff;
   --h1: #fff;
   --ThemeToggler-text: #fff;
+  --NotFound-SVG: invert(50%) sepia(20%) saturate(0%) hue-rotate(44deg)
+    brightness(90%) contrast(120%);
+  --Found-SVG: invert(90%) sepia(50%) saturate(50%) hue-rotate(177deg)
+    brightness(120%) contrast(100%);
 }
 
 :root {
@@ -29,6 +33,10 @@
   --follower-count-text: #2b3442;
   --h1: #000;
   --ThemeToggler-text: #697c9a;
+  --NotFound-SVG: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg)
+    brightness(100%) contrast(103%);
+  --Found-SVG: invert(36%) sepia(50%) saturate(454%) hue-rotate(177deg)
+    brightness(98%) contrast(90%);
 }
 
 /* .theme-light {

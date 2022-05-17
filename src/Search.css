@@ -41,6 +41,10 @@
   font-family: "Space Mono", monospace;
   outline: none;
 }
+input:foucs,
+textarea:focus {
+  outline: none;
+}
 
 #submit {
   background-color: #0079ff;

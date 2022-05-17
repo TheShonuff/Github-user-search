@@ -149,29 +149,24 @@
 .website img,
 .location img,
 .company img {
-  filter: invert(36%) sepia(50%) saturate(454%) hue-rotate(177deg)
-    brightness(98%) contrast(90%);
+  filter: var(--Found-SVG);
 }
 
 .not-found-twitter img,
 .not-found-twitter p {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(100%)
-    contrast(103%);
+  filter: var(--NotFound-SVG);
 }
 .not-found-website img,
 .not-found-website p {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(100%)
-    contrast(103%);
+  filter: var(--NotFound-SVG);
 }
 .not-found-location img,
 .not-found-location p {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(100%)
-    contrast(103%);
+  filter: var(--NotFound-SVG);
 }
 .not-found-company img,
 .not-found-company * {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(100%)
-    contrast(103%);
+  filter: var(--NotFound-SVG);
 }
 
 .location p,
