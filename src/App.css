@@ -14,6 +14,27 @@ h1 {
   color: var(--h1);
 }
 
+.Top {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: -31rem;
+  margin-left: 40rem;
+}
+
+.ThemeChanger {
+  border: none;
+  background: none;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  color: var(--ThemeToggler-text);
+  padding-right: 1rem;
+}
+
+.ThemeChanger:hover {
+  cursor: pointer;
+}
+
 .App {
   display: flex;
   justify-content: center;

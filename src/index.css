@@ -16,6 +16,7 @@
   --box-shadow: 0px;
   --follower-count-text: #fff;
   --h1: #fff;
+  --ThemeToggler-text: #fff;
 }
 
 :root {
@@ -27,6 +28,7 @@
   --box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   --follower-count-text: #2b3442;
   --h1: #000;
+  --ThemeToggler-text: #697c9a;
 }
 
 /* .theme-light {

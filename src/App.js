@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+import Moon from "./assets/icon-moon.svg";
+import Sun from "./assets/icon-sun.svg";
 import { keepTheme } from "./Themes";
 import "./App.css";
 import Search from "./Search";
@@ -21,7 +22,12 @@ function App() {
   };
   return (
     <div className="App" data-theme={theme}>
-      <button onClick={switchTheme}>I'm a Theme Changer</button>
+      <div className="Top">
+        <button className="ThemeChanger" onClick={switchTheme}>
+          {theme === "light" ? "DARK" : "LIGHT"}
+        </button>
+        <img src={theme === "light" ? Moon : Sun}></img>
+      </div>
       <Search />
     </div>
   );
