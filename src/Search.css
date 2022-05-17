@@ -91,7 +91,7 @@ textarea:focus {
     width: 84px;
   }
   #search {
-    background-color: #fefefe;
+    background-color: var(--card-background-color);
     width: 180px;
     font-size: 13px;
     color: #4b6a9b;

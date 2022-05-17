@@ -42,8 +42,14 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+  .Top {
+    margin-top: -31rem;
+    margin-left: 30rem;
+  }
 }
 @media screen and (max-width: 500px) {
-  .Search {
+  .Top {
+    margin-top: -34rem;
+    margin-left: 15rem;
   }
 }
