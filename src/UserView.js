@@ -29,6 +29,7 @@ class UserView extends React.Component {
     } else {
       stringBio = this.props.bio;
     }
+    const twitter = "http://www.twitter.com/";
     console.log(`UserView has blog as ${this.props.blog}`);
     return (
       <div className="UserView">
@@ -75,11 +76,13 @@ class UserView extends React.Component {
             }
           >
             <img src={twitterSVG}></img>
-            <p>
-              {this.props.twitter === null
-                ? "Not Available"
-                : this.props.twitter}
-            </p>
+            <a href={`http://www.twitter.com/` + this.props.twitter}>
+              <p>
+                {this.props.twitter === null
+                  ? "Not Available"
+                  : this.props.twitter}
+              </p>
+            </a>
           </div>
           <div
             className={
@@ -87,9 +90,11 @@ class UserView extends React.Component {
             }
           >
             <img src={websiteSVG}></img>
-            <p>
-              {this.props.blog === null ? "Noy Available" : this.props.blog}
-            </p>
+            <a href={this.props.blog}>
+              <p>
+                {this.props.blog === null ? "Noy Available" : this.props.blog}
+              </p>
+            </a>
           </div>
           <div
             className={

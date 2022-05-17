@@ -152,6 +152,19 @@
   filter: var(--Found-SVG);
 }
 
+.twitter p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.website:hover {
+  text-decoration: underline;
+}
+
+.not-found-company {
+  text-decoration: none;
+}
+
 .not-found-twitter img,
 .not-found-twitter p {
   filter: var(--NotFound-SVG);
