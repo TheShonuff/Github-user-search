@@ -74,6 +74,11 @@ textarea:focus {
 
   .noResult {
     margin-left: 17rem;
+    margin-right: 0;
+  }
+
+  #submit {
+    margin-right: 5.2rem;
   }
 }
 
@@ -97,6 +102,7 @@ textarea:focus {
   #submit {
     height: 46px;
     width: 84px;
+    margin-right: 0.5rem;
   }
   #search {
     background-color: var(--card-background-color);

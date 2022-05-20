@@ -45,7 +45,7 @@
 
 .Name {
   color: var(--text-main-text-color);
-  width: 200px;
+  width: 300px;
   font-size: 26px;
   font-weight: bold;
   font-family: "Space Mono", monospace;
@@ -132,6 +132,7 @@
   grid-template-rows: 30px;
   margin-left: 11.5rem;
   margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .location,
@@ -195,6 +196,7 @@
 @media screen and (max-width: 900px) {
   .UserView {
     width: 573px;
+    min-height: 419px;
   }
 
   .repoInfo {
@@ -209,12 +211,15 @@
 
   .Bio {
     margin-top: 4rem;
-    margin-left: -9rem;
+    margin-left: -8rem;
+  }
+  .Login {
+    padding-bottom: 1rem;
   }
 
   .Joined {
     position: absolute;
-    margin-top: 8.5rem;
+    margin-top: 10.5rem;
     margin-left: -5.3rem;
   }
 }
@@ -241,7 +246,7 @@
     height: auto;
   }
   .Bio {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: -6rem;
   }
 
