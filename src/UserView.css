@@ -197,7 +197,7 @@
 @media screen and (max-width: 900px) {
   .UserView {
     width: 573px;
-    min-height: 419px;
+    height: 419px;
   }
 
   .repoInfo {
@@ -245,11 +245,13 @@
   }
   .UserView {
     width: 327px;
-    height: auto;
+    height: 450px;
   }
   .Bio {
     margin-top: 2rem;
     margin-left: -6rem;
+    width: 250px;
+    height: 60px;
   }
 
   .Joined {
