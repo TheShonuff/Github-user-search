@@ -7,6 +7,8 @@ import search from "./assets/icon-search.svg";
 import { useTheme } from "./ThemeContext";
 import { useState } from "react";
 
+import useLocalStorage from "use-local-storage";
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -16,6 +18,7 @@ class Search extends React.Component {
       data: [],
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.themeToggler = this.themeToggler;
   }
 
   handleSubmit(event) {

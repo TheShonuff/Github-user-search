@@ -10,7 +10,7 @@
   /* background-color: #fefefe; */
   background-color: var(--card-background-color);
   width: 730px;
-  min-height: 419px;
+  height: 419px;
   border-radius: 15px;
   margin-top: 1.5rem;
   box-shadow: var(--box-shadow);
@@ -32,7 +32,8 @@
 .UserTop {
   display: flex;
   flex-flow: row;
-  padding-top: 0.5rem;
+  padding-top: -1.5rem;
+  margin-top: 0;
 }
 
 .UserTop img {
@@ -55,7 +56,7 @@
 
 .Login {
   color: #0079ff;
-  width: 100px;
+  width: 200px;
   font-size: 16px;
   font-family: "Space Mono", monospace;
   margin-top: 0;
@@ -63,7 +64,7 @@
 
 .Bio {
   color: var(--text-main-text-color);
-  width: 250px;
+  width: 350px;
   font-size: 15px;
   font-family: "Space Mono", monospace;
 }
@@ -212,6 +213,7 @@
   .Bio {
     margin-top: 4rem;
     margin-left: -8rem;
+    margin-bottom: 0;
   }
   .Login {
     padding-bottom: 1rem;
